@@ -1,0 +1,33 @@
+﻿<!---
+//===============================================================================
+// Microsoft FastTrack for Azure
+// Azure Service Bus Samples
+//===============================================================================
+// Copyright © Microsoft Corporation.  All rights reserved.
+// THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY
+// OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
+// LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+// FITNESS FOR A PARTICULAR PURPOSE.
+//===============================================================================
+--->
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Service Bus Topic Send Example</h1>
+    <hr />
+    <div class="row">
+        <div class="col-md-12">
+            <form asp-action="Index">
+                <div class="form-row">
+                    <input id="btnSendMessage" name="btnSendMessage" type="submit" value="Send Message" class="btn btn-primary" />
+                </div>
+            </form>
+            @if (ViewBag.Message != null)
+            {
+                <p>@ViewBag.Message</p>
+            }
+        </div>
+    </div>
+</div>
